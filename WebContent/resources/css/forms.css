@@ -1,0 +1,92 @@
+input[type=text], input[type=text] {
+    width: 80%;
+}
+fieldset#sexo {
+    width: 150px;
+}
+.borda{
+    max-width: 780px;
+    box-shadow: 5px 5px 10px #000;
+    padding: 30px;
+    margin-right: 30px;
+    background-color: white;
+}
+.linha, .coluna {
+    box-sizing: border-box;
+}
+.linha:before, .linha:after {
+    content: " ";
+    display: table;
+}
+
+.linha:after {
+    clear: both;
+}
+
+.linha{
+    margin-bottom: 10px; 
+}
+
+.coluna {
+    position: relative;
+    float: left;
+}
+
+.col-1{ width: 6.86%;}
+.col-2{ width: 15.33%;}
+.col-3{ width: 23.8%;}
+.col-4{ width: 32.26%;}
+.col-5{ width: 40.73%;}
+.col-6{ width: 49.2%;}
+.col-7{ width: 57.66%;}
+.col-8{ width: 66.13%;}
+.col-9{ width: 74.6%;}
+.col-10{ width: 83.06;}
+.col-11{ width: 91.53;}
+.col-12{ 
+    width: 100%;
+    margin-left: 0;
+}
+
+.coluna .coluna {
+    color: #eee;
+    background: #333;
+    border-color: #000;
+}
+
+@media screen and (max-width:550px){
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12{
+        float: none;
+        width: auto;
+    }
+
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .coluna + .coluna {
+        margin-left: 0;
+    }
+
+    .linha{
+        margin-bottom: 0;
+    }
+    .coluna{
+        margin-bottom: 10px;
+    }
+    .linha:last-child .coluna:last-child {
+        margin-bottom: 0;
+    }
+}
