@@ -1,18 +1,14 @@
 package br.edu.riobrancofac.controller;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.web.servlet.MockMvc;
 
 class HomeControllerTest {
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
+	private MockMvc mockmvc;
 
 	@Test
-	void testIniciar() {
+	void deveRetornarStatusOk() {
 	}
 
 }
